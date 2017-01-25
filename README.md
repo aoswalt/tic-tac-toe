@@ -1,5 +1,5 @@
 # tic-tac-toe
-Polyglot FP solutions to tic-tac-toe
+A NashFP playground for you to contribute your polyglot FP solutions to tic-tac-toe.
 
 ```
 SHALL WE PLAY A GAME?
