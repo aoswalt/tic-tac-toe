@@ -3,11 +3,19 @@ defmodule TicTacToeTest do
   doctest TicTacToe
 
   test "new game" do
-    assert TicTacToe.play() == [nil, nil, nil, nil, nil, nil, nil, nil, nil]
+    assert TicTacToe.new() == [nil, nil, nil, nil, nil, nil, nil, nil, nil]
   end
 
   test "no moves" do
     assert TicTacToe.play([]) == [nil, nil, nil, nil, nil, nil, nil, nil, nil]
+  end
+
+  test "one move" do
+    assert TicTacToe.play([3]) == [nil, nil, "X", nil, nil, nil, nil, nil, nil]
+  end
+
+  test "multiple moves" do
+    assert TicTacToe.play([3, 5, 4]) == [nil, nil, "X", "X", "O", nil, nil, nil, nil]
   end
 
   test "no placements" do
